@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  padding: 10rem 30rem;
+}
+.heading__primary {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.heading__secondary {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.heading__tertiary {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+.text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.btn {
+  font-size: 1.6rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0;
+}
+.btn.btn-solid-orange {
+  background: #e6692e;
+  color: #fff;
+}
+
+.btn.btn-color-orange {
+  background: transparent;
+  color: #e6692e;
+}
+
+.btn.btn-white-orange {
+  background: #fff;
+  color: #e6692e;
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 60%;
+  }
+  section {
+    padding: 8rem 25rem;
+  }
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 58%;
+  }
+  section {
+    padding: 8rem 20rem;
+  }
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 56%;
+  }
+  section {
+    padding: 6rem 10rem;
+  }
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 56%;
+  }
+  section {
+    padding: 6rem 8rem;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 54%;
+  }
+  section {
+    padding: 6rem;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    padding: 4rem;
+  }
+}

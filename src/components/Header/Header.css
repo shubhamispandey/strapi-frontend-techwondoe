@@ -1,0 +1,35 @@
+.header {
+  height: calc(100vh - 8.2rem);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.header .header__banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header .header__vector {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.header .header__title {
+  display: none;
+}
+@media (max-width: 600px) {
+  .header .header__title {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}

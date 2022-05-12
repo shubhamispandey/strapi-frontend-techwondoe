@@ -1,0 +1,45 @@
+.people {
+  background: #ededed;
+}
+.people .people__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.people .people__item {
+  background: #fff;
+  padding: 4rem;
+  flex-basis: 48%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.people .people__item .people__item--vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+.people .people__item h2 {
+  margin: 1rem 0;
+}
+.people .people__item p {
+  margin: 1rem 0;
+}
+.people .people__item button {
+  align-self: flex-start;
+  padding: 0;
+  margin-top: auto;
+}
+@media (max-width: 700px) {
+  .people .people__items {
+    flex-direction: column;
+  }
+  .people .people__item:first-child {
+    margin-bottom: 3rem;
+  }
+}

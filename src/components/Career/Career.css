@@ -1,0 +1,12 @@
+.career {
+  background: #e6692e;
+  text-align: center;
+}
+.career h1,
+.career p {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.career button {
+  font-size: 2rem;
+}
