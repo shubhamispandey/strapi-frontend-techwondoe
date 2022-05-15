@@ -18,16 +18,16 @@ const People = () => {
     <section className="people" id="people">
       <div className="people__items">
         {peopleData?.people?.data.map((people) => {
-          const { icon, title, description, button } = people.attributes;
+          const { title, description, button } = people.attributes;
           return (
             <div className="people__item" key={people.id}>
               <span
                 className="people__item--vector"
                 style={{
-                  backgroundColor: people.id == 1 ? "#E6692E33" : "#11984B33",
+                  backgroundColor: people.id === 1 ? "#E6692E33" : "#11984B33",
                 }}
               >
-                {people.id == 1 ? (
+                {people.id === 1 ? (
                   <FontAwesomeIcon
                     style={{ color: "#E6692E" }}
                     icon={faUserGroup}
