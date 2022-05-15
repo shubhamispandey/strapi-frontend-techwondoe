@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Team.css";
 import { getTeamData } from "../../api";
 
+import Button from "../../stories/Button/Button";
+import Typography from "../../stories/Typography/Typography";
+
 const Team = () => {
   const [teamData, setTeamData] = useState([]);
 
@@ -21,9 +24,9 @@ const Team = () => {
       </div>
       <div className="team__desc">
         <span className="team__tag">{teamData.tag}</span>
-        <h1 className="heading__primary">{teamData.title}</h1>
-        <p className="text">{teamData.description}</p>
-        <button className="btn btn-solid-orange">{teamData.button}</button>
+        <Typography variant="h1" children={teamData.title} />
+        <Typography variant="text" children={teamData.description} />
+        <Button variant="primary" children={teamData.button} />
       </div>
     </section>
   );

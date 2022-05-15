@@ -3,6 +3,8 @@ import "./News.css";
 import { getNewsSectionData, getNewsData } from "../../api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Button from "../../stories/Button/Button";
+import Typography from "../../stories/Typography/Typography";
 
 const News = () => {
   const [newsData, setNewsData] = useState([]);
@@ -17,9 +19,7 @@ const News = () => {
     <section className="news" id="news">
       <div className="news__header">
         <h1 className="heading__primary">{newsSectionData.title}</h1>
-        <button className="btn btn-solid-orange">
-          {newsSectionData.button}
-        </button>
+        <Button variant="primary" children={newsSectionData.button} />
       </div>
       <div className="news__items">
         {newsData?.map((news) => {
@@ -33,14 +33,15 @@ const News = () => {
                 />
               </div>
               <span className="news__item--detail">{`by ${author} | ${date}`}</span>
-              <h2 className="heading__tertiary">{title}</h2>
-              <button className="btn btn-color-orange">
+              <Typography variant="h3" children={title} />
+
+              <Button variant="default">
                 {button}
                 <FontAwesomeIcon
                   style={{ marginLeft: "1rem" }}
                   icon={faArrowRight}
                 />
-              </button>
+              </Button>
             </div>
           );
         })}

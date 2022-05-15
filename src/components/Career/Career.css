@@ -2,8 +2,8 @@
   background: #e6692e;
   text-align: center;
 }
-.career h1,
-.career p {
+.career .h1,
+.career .para {
   color: #fff;
   margin-bottom: 3rem;
 }

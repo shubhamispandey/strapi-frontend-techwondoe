@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Career.css";
 import { getCareerData } from "../../api";
 
+import Button from "../../stories/Button/Button";
+import Typography from "../../stories/Typography/Typography";
+
 const Career = () => {
   const [careerData, setCareerData] = useState([]);
 
@@ -11,9 +14,9 @@ const Career = () => {
 
   return (
     <section className="career" id="career">
-      <h1 className="heading__primary">{careerData.title}</h1>
-      <p className="description">{careerData.description}</p>
-      <button className="btn btn-white-orange">{careerData.button}</button>
+      <Typography variant="h1" children={careerData.title} />
+      <Typography variant="para" children={careerData.description} />
+      <Button variant="secondary" children={careerData.button} />
     </section>
   );
 };

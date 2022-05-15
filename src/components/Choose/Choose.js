@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Choose.css";
 import { getChooseData } from "../../api";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import Typography from "../../stories/Typography/Typography";
+import ChooseStory from "../../stories/ChooseStory/ChooseStory";
 
 const Choose = () => {
   const [chooseData, setChooseData] = useState([]);
@@ -13,18 +14,17 @@ const Choose = () => {
 
   return chooseData ? (
     <section className="choose" id="choose">
-      <h1 className="heading__primary">{chooseData.title}</h1>
-      <p className="description">{chooseData.description}</p>
+      <Typography variant="h1" children={chooseData.title} />
+      <Typography variant="para" children={chooseData.description} />
 
       <div className="choose__items">
         {chooseData?.chooses?.data.map((chooseItem) => (
-          <div className="choose__item" key={chooseItem.id}>
-            <span className="choose__tick">
-              <FontAwesomeIcon icon={faCheck} />
-            </span>
-            <h2 className="heading__tertiary">{chooseItem.attributes.title}</h2>
-            <p className="text">{chooseItem.attributes.details}</p>
-          </div>
+          <ChooseStory
+            key={chooseItem.id}
+            icon={faCheck}
+            title={chooseItem.attributes.title}
+            description={chooseItem.attributes.details}
+          />
         ))}
       </div>
     </section>

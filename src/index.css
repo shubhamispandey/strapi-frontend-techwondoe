@@ -35,27 +35,7 @@ section {
   font-weight: 400;
   line-height: 2.4rem;
 }
-.btn {
-  font-size: 1.6rem;
-  padding: 0.8rem 2rem;
-  border-radius: 0.5rem;
-  border: 0;
-  outline: 0;
-}
-.btn.btn-solid-orange {
-  background: #e6692e;
-  color: #fff;
-}
 
-.btn.btn-color-orange {
-  background: transparent;
-  color: #e6692e;
-}
-
-.btn.btn-white-orange {
-  background: #fff;
-  color: #e6692e;
-}
 @media (max-width: 1500px) {
   html {
     font-size: 60%;

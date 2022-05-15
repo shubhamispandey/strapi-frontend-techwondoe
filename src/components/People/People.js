@@ -4,6 +4,9 @@ import { getPeopleData } from "../../api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserGroup, faSuitcase } from "@fortawesome/free-solid-svg-icons";
 
+import Button from "../../stories/Button/Button";
+import Typography from "../../stories/Typography/Typography";
+
 const People = () => {
   const [peopleData, setPeopleData] = useState([]);
 
@@ -36,9 +39,9 @@ const People = () => {
                   />
                 )}
               </span>
-              <h2 className="heading__secondary">{title}</h2>
-              <p className="description">{description}</p>
-              <button className="btn btn-color-orange">{button}</button>
+              <Typography variant="h2" children={title} />
+              <Typography variant="para" children={description} />
+              <Button variant="default" children={button} />
             </div>
           );
         })}
