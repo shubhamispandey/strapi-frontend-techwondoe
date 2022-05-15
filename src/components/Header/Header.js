@@ -14,12 +14,10 @@ const Header = () => {
       <img
         className="header__banner"
         src={headerData?.Banner?.data?.attributes?.url}
-        alt="Header Img"
       />
       <img
         className="header__vector"
         src={headerData?.vector?.data?.attributes?.url}
-        alt="Header vector"
       />
       <h1 className="heading__primary header__title">Take the leap with us</h1>
     </div>
