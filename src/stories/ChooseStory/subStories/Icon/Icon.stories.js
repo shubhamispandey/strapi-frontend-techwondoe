@@ -6,4 +6,4 @@ export default {
   title: "Icon",
   component: Icon,
 };
-export const Icon = () => <Icon variant={faCheck}>Icon</Icon>;
+export const CustomIcon = () => <Icon variant={faCheck}>Icon</Icon>;
